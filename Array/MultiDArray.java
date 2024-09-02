@@ -5,8 +5,9 @@ public class MultiDArray {
         System.out.println("Task 1:");
         for (int[] row : numbers) {
             for (int num : row) {
-                System.out.println(num);
+                System.out.print(num + " ");
             }
+            System.out.println();
         }
         System.out.println();
 
