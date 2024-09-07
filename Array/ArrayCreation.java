@@ -39,6 +39,32 @@ class Array {
         }
     }
 
+    // finding array maximum
+    public int[] arrayMax() {
+        int maxVal = arr[0];
+        int maxIndex = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > maxVal) {
+                maxVal = arr[i];
+                maxIndex = i;
+            }
+        }
+        return new int[] { maxVal, maxIndex };
+    }
+
+    // finding array minimum
+    public int[] arrayMin() {
+        int minVal = arr[0];
+        int minIndex = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] < minVal) {
+                minVal = arr[i];
+                minIndex = i;
+            }
+        }
+        return new int[] { minVal, minIndex };
+    }
+
     // returns the sum of array
     public int arraySum() {
         int sum = 0;
@@ -91,7 +117,10 @@ public class ArrayCreation {
         Scanner sc = new Scanner(System.in);
         Array arr = new Array(sc);
         arr.createArray();
-        arr.arraySearch();
+        int[] maximum = arr.arrayMax();
+        int[] minimum = arr.arrayMin();
+        System.out.println("maximum value: " + maximum[0] + " and index: " + maximum[1]);
+        System.out.println("minimum value: " + minimum[0] + " and index: " + minimum[1]);
         sc.close();
 
     }
