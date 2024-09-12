@@ -10,13 +10,13 @@ public class StringMethods {
         System.out.println(str.toCharArray()); // convert string to char array
         System.out.println(str.toLowerCase()); // convert string to lower case
         System.out.println(str.toUpperCase()); // convert string to upper case
-        System.out.println(str.indexOf("wo")); // return the index
+        System.out.println(str.indexOf("Wo")); // return the index 
         System.out.println(str.lastIndexOf('l')); // return the index of last occurrence of the character
-        System.out.println(str.substring(2, 6)); // return the substring
+        System.out.println(str.substring(7, 12)); // return the substring
         // to print array converted into string
         System.out.println(Arrays.toString(str.split(" "))); // split by space into array
-        System.out.println(str.charAt(9)); // return the character at the index
+        System.out.println(str.charAt(7)); // return the character at the index
         System.out.println(str.replace('o', 'z')); // replace the character
-        System.out.println(str.replaceAll("world", "my boy")); // replace all occurrences of the string
+        System.out.println(str.replaceAll("World", "my boy")); // replace all occurrences of the string
     }
 }
