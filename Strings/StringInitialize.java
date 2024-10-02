@@ -16,6 +16,6 @@ public class StringInitialize {
         System.out.println("checking String 1 & 2: " + (str1 == str2));
         System.out.println("checking String 1 & 3: " + (str1 == str3));
         System.out.println("checking String 2 & 4: " + (str2 == str4)); // '==' check the address
-        System.out.println("checking String 1 & 2: " + (str1.equals(str2))); // equals check the value
+        System.out.println("checking String 1 & 2 (equals): " + (str1.equals(str2))); // equals check the value
     }
 }
